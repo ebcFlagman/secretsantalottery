@@ -7,7 +7,7 @@ Application to draw a Secret Santa to a gifted person.
 
 ## run
 
-`java -jar SecretSantaLottery-1.0.0.jar ----spring.config.location=<path-to-your-application.yml>`
+`java -jar secret-santa-lottery-1.0.0.jar ----spring.config.location=<path-to-your-application.yml>`
 
 
 ## application.yml
