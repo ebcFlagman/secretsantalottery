@@ -1,12 +1,13 @@
 # Secret Santa Lottery
 
 ![example workflow](https://github.com/ebcFlagman/secretsantalottery/actions/workflows/gradle.yml/badge.svg)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/ebcFlagman/secretsantalottery)
 
 Application to draw a Secret Santa to a gifted person.
 
 ## run
 
-`java -jar secretsantalotter-1.0.0.jar ----spring.config.location=<path-to-your-application.yml>`
+`java -jar SecretSantaLottery-1.0.0.jar ----spring.config.location=<path-to-your-application.yml>`
 
 
 ## application.yml
