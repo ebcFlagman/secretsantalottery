@@ -9,6 +9,9 @@ apply plugin: 'io.spring.dependency-management'
 group = 'ch.flagmansworld'
 version = '1.0.0'
 
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
+
 repositories {
   mavenLocal()
   mavenCentral()
@@ -31,6 +34,12 @@ test {
 }
 
 publishing {
+  publications {
+    mavenJava(MavenPublication) {
+      artifact bootJar
+    }
+  }
+
   repositories {
     maven {
       name = "GitHubPackages"
