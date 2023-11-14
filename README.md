@@ -1,4 +1,4 @@
-![example workflow](https://github.com/ebcFlagman/actions/workflows/gradle.yml/badge.svg)
+![example workflow](https://github.com/ebcFlagman/secretsantalottery/actions/workflows/gradle.yml/badge.svg)
 
 # Secret Santa Lottery
 
