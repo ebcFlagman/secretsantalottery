@@ -1,6 +1,6 @@
-![example workflow](https://github.com/ebcFlagman/secretsantalottery/actions/workflows/gradle.yml/badge.svg)
-
 # Secret Santa Lottery
+
+![example workflow](https://github.com/ebcFlagman/secretsantalottery/actions/workflows/gradle.yml/badge.svg)
 
 Application to draw a Secret Santa to a gifted person.
 
