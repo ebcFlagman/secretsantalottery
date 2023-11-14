@@ -1,0 +1,23 @@
+spring:
+  mail:
+    username: santa
+    password: secret
+    host: 127.0.0.1
+    port: 3025 # default protocol port + 3000 as offset
+    protocol: smtp
+
+  main:
+    banner-mode: off
+
+xmas:
+  # text has two variables for the secret santa {0} and for the gifted {1}
+  text: "Hallo {0}\n\nFür das Weihnachtsfest vom 24.12.2023 bei Santa's wurde dir {1} zum Wichteln zugelost.\n\nDein Wichtel Generator"
+  participants:
+    - name: secret_santa_1
+      email: secret_santa_1@xmas.com
+    - name: secret_santa_2
+      email: secret_santa_2@xmas.com
+    - name: secret_santa_3
+      email: secret_santa_3@xmas.com
+    - name: secret_santa_4
+      email: secret_santa_4@xmas.com
