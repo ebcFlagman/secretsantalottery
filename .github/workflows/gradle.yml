@@ -25,17 +25,8 @@ jobs:
       - name: Gradle Wrapper Validation
         uses: gradle/wrapper-validation-action@v1
 
-      - uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
       - name: Build and test project with Gradle
-        run: ./gradlew build
+        run: ./gradlew clean build
 
       - name: JUnit Report Action
         uses: mikepenz/action-junit-report@v3.1.0-b01
