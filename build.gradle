@@ -9,8 +9,11 @@ apply plugin: 'io.spring.dependency-management'
 group = 'ch.flagmansworld'
 version = '1.0.0'
 
-sourceCompatibility = JavaVersion.VERSION_21
-targetCompatibility = JavaVersion.VERSION_21
+java.toolchain {
+  languageVersion.set(JavaLanguageVersion.of(25))
+  vendor.set(JvmVendorSpec.ADOPTIUM)
+  implementation.set(JvmImplementation.VENDOR_SPECIFIC)
+}
 
 repositories {
   mavenLocal()
@@ -18,15 +21,13 @@ repositories {
 }
 
 dependencies {
-  compileOnly 'org.projectlombok:lombok:1.18.42'
-  annotationProcessor 'org.projectlombok:lombok:1.18.42'
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
 
   implementation 'org.springframework.boot:spring-boot-starter'
   implementation 'org.springframework.boot:spring-boot-starter-mail'
 
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
-  testImplementation 'com.icegreen:greenmail-junit5:2.1.5'
-  testImplementation 'org.awaitility:awaitility:4.3.0'
 }
 
 test {
