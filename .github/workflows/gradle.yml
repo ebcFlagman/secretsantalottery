@@ -23,7 +23,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Gradle Wrapper Validation
-        uses: gradle/actions/wrapper-validation@v4
+        uses: gradle/actions/wrapper-validation@v5
 
       - name: Build and test project with Gradle
         run: ./gradlew clean build
